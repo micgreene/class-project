@@ -1,0 +1,116 @@
+
+/*
+    Body
+*/
+body{
+    background-color: rgba(214, 233, 176, .5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(31, 44, 4);
+}
+
+/*Header Section*/
+header{
+    margin: 0px auto;
+    width : 1500px;
+    background-color: rgb(214, 233, 176);
+    height: 200px;
+}
+
+header > img{
+    margin: 0px auto;
+    width: 1500px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+}
+
+h1
+{
+    text-align: center;    padding: 30px;
+    margin-right: 150px;
+}
+
+header > img + h1{
+    display: inline;
+}
+
+/*header > nav{
+   float: left;
+}
+*/
+
+header > nav >ul >li{
+    /*display: inline-block;*/
+    width: 150px;
+    border: 1px solid black;
+    text-align: left;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: darkgreen;
+
+}
+
+header > nav > ul > li > a{
+    color: inherit;
+}
+
+.group{
+    color: chartreuse;
+}
+
+#item{
+    color: deeppink;
+}
+
+main{
+    margin: 0px auto;
+    width: 1500px;
+    background-color: rgb(214, 233, 176);    
+}
+
+main > article{
+    border: 1px solid black;
+    text-align: center;
+}
+
+main> h3{
+    border: 5px solid black;
+    text-align: center;
+}
+
+main > ul{
+    align-self: center;
+}
+
+section{
+    border: 5px dotted olivedrab;
+    width: 300px;
+    display: inline-block;
+    background-color: rgb(164, 185, 122, .5);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section > img{
+    border: 1px solid black;
+}
+
+main > article > img{
+    border: 1px dotted black;
+}
+
+footer{
+    margin: 15px auto;
+    width: 1500px;
+}
+
+footer > p{
+    float:  right;
+}
+
+
+
