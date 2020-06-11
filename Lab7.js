@@ -7,7 +7,7 @@ function consoleWarFaction() {
     var message;
     if (myConsole == 'GENESIS') {
         message = 'Genesis DOES what NintenDON\'T!';
-    } else if (myConsole == 'SUPER NINTENDO' || 'NINTENDO') {
+    } else if (myConsole == 'SUPER NINTENDO' || myConsole == 'NINTENDO') {
         message = 'Everyone knows the SNES is clearly the superior console!';
     } else {
         myConsole = prompt('Ya gotta pick ONE!');
@@ -25,7 +25,7 @@ function talkingClock() {
 
     if (consolePreference == 'GENESIS') {
         consoleKidType = 'Genesis Kid';
-    } else if (consolePreference == 'SUPER NINTENDO' || 'NINTENDO') {
+    } else if (consolePreference == 'SUPER NINTENDO' || consolePreference == 'NINTENDO') {
         consoleKidType = 'Nintendo Kid';
     } else {
         consoleKidType = 'weirdo';  
@@ -58,10 +58,10 @@ function quizTime() {
     if (noOrYes == 'Yes') {
         var response = prompt('Awesome. I knew you were my guy. Tell me, which game came bundled with the ' + consolePreference + '?');
     } else if (noOrYes == 'No') {
-        return document.write('A REAL fan would just take the quiz...');
+        return document.write('<h3>A REAL fan would just take the quiz...</h3>');
     }
 
-    if (response == 'Sonic' || 'sonic' ) {
+    if (response == 'Sonic' || response == 'sonic' || response == 'sonic the hedgehog' || response == 'Sonic the Hedgehog' || response == 'Super Mario' || response == 'Super Mario World' || response == 'Mario' || response == 'super mario' || response == 'mario' || response == 'super mario world') {
         return document.write('<h3>You. Absolute. LEGEND. Well done, ' + consoleKidType + '!</h3>');
     } else {
         return document.write('Are you SURE you owned a ' + consolePreference + '???');
