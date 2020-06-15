@@ -27,7 +27,7 @@ function smoothieFlavor(){
   
   var myFlavor = prompt(flavorMessage);
   
-  if (myFlavor === 'CHOCOLATE' || myFlavor === 'Chocolate' || myFlavor === 'chocolate){
+  if (myFlavor === 'CHOCOLATE' || myFlavor === 'Chocolate' || myFlavor === 'chocolate'){
       return
   } else if (myFlavor === 'VANILLA' || myFlavor === 'Vanilla' || myFlavor === 'vanilla'){
       return  
