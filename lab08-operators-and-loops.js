@@ -31,7 +31,7 @@ function smoothieFlavor(){
       return
   } else if (myFlavor === 'VANILLA' || myFlavor === 'Vanilla' || myFlavor === 'vanilla'){
       return  
-  } else {prompt('Ehhhhh...I\'m not sure what a ' + myFlavor + ' smoothie is. Could you let me ask you once more, please?);
+  } else {prompt('Ehhhhh...I\'m not sure what a ' + myFlavor + ' smoothie is. Could you let me ask you once more, please?');
   }
 }
 
