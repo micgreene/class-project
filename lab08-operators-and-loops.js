@@ -11,7 +11,7 @@ function smoothieType() {
         message = 'And since our CREAMY smoothies are made with all natural Preyer\'s-Brand yogurt, now EVERYDAY can be a cheat day!';
     } else {prompt('Ehhhhh...I\'m not sure what a ' + myType + ' smoothie is. Could you let me ask you once more, please?);
         smoothieType();
-        return;
+        return
     }
 }
 
@@ -28,9 +28,9 @@ function smoothieFlavor(){
   var myFlavor = prompt(flavorMessage);
   
   if (myFlavor === 'CHOCOLATE' || myFlavor === 'Chocolate' || myFlavor === 'chocolate){
-      return;
+      return
   } else if (myFlavor === 'VANILLA' || myFlavor === 'Vanilla' || myFlavor === 'vanilla'){
-      return;  
+      return  
   } else {prompt('Ehhhhh...I\'m not sure what a ' + myFlavor + ' smoothie is. Could you let me ask you once more, please?);
   }
 }
@@ -48,6 +48,8 @@ function howManySmoothies(){
     smoothieType();
     smoothieFlavor();
     howManySmoothies();
+  } else{
+    return
   }
 }
 
