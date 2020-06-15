@@ -46,9 +46,13 @@ function howManySmoothies(){
   var runAgain = prompt('Could I get you anything else? [Type YES or NO, or else I won\'t understand you!]');
   if(runAgain === 'YES' || runAgain === 'Yes' || runAgain === 'yes'){
     smoothieType();
-    smoothieFLavor();
+    smoothieFlavor();
     howManySmoothies();
-  }
+}
+
+ smoothieType();
+ smoothieFlavor();
+ howManySmoothies();
 }
 
 
