@@ -40,7 +40,7 @@ function howManySmoothies(){
   var howMany = prompt('So how many ' + myType + ' ' + myFlavor + ' smoothies would you like? [Please type ONLY NUMBERS, or else I won\'t understand you!');
   
   for(var i = howMany; i != 0; i--){
-    document.write('<h3>' + myType + myFlavor + 'Smoothie'</h3>');
+    document.write('<h3>' + myType + myFlavor + 'Smoothie</h3>');
   }
                    
   var runAgain = prompt('Could I get you anything else? [Type YES or NO, or else I won\'t understand you!]');
