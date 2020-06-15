@@ -9,7 +9,7 @@ function smoothieType() {
         message = 'Mmm, a FRUIT smoothie does sound refreshing right now, doesn\'t it?';
     } else if (myType === 'CREAM' || myType === 'Cream' || myType === 'cream' || myType === 'CREAMY' || myType === 'Creamy' || myType === 'creamy') {
         message = 'And since our CREAMY smoothies are made with all natural Preyer\'s-Brand yogurt, now EVERYDAY can be a cheat day!';
-    } else {prompt('Ehhhhh...I\'m not sure what a ' + myType + ' smoothie is. Could you let me ask you once more, please?);
+    } else {var again = prompt('Ehhhhh...I\'m not sure what a ' + myType + ' smoothie is. Could you let me ask you once more, please?);
         smoothieType();
         return
     }
