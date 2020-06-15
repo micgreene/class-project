@@ -48,11 +48,11 @@ function howManySmoothies(){
     smoothieType();
     smoothieFlavor();
     howManySmoothies();
+  }
 }
 
- smoothieType();
- smoothieFlavor();
- howManySmoothies();
-}
+smoothieType();
+smoothieFlavor();
+howManySmoothies();
 
 
