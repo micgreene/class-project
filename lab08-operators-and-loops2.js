@@ -19,7 +19,7 @@ function smoothieFlavor(){
   var flavorMessage;
   
   //asks for FLAVOR of the TYPE of smoothie
-  if (myType === 'FRUIT' || myType === 'fruit' || myType === 'Fruit'){
+  if (myType === 'FRUIT' || myType === 'fruit' || myType === 'Fruit' || myType === 'FRUITY' || myType === 'fruity' || myType === 'Fruity'){
       flavorMessage  = message + ' Would you like STRAWBERRY or BANANA?[Please type STRAWBERRY or BANANA, otherwise I won\'t understand you!]';
   } else if (myType === 'CREAM' || myType === 'Cream' || myType === 'cream' || myType === 'CREAMY' || myType === 'Creamy' || myType === 'creamy'){
       flavorMessage  = message + ' Would you like CHOCOLATE or VANILLA?[Please type CHOCOLATE or VANILLA, otherwise I won\'t understand you!]';  
