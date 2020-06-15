@@ -11,11 +11,11 @@ function smoothieType() {
         message = 'And since our CREAMY smoothies are made with all natural Preyer\'s-Brand yogurt, now EVERYDAY can be a cheat day!';
     } else {var again = prompt('Ehhhhh...I\'m not sure what a ' + myType + ' smoothie is. Could you let me ask you once more, please?');
         smoothieType();
-        return
+        return smoothieFlavor(myType);
     }
 }
 
-function smoothieFlavor(){
+function smoothieFlavor(myType){
   var flavorMessage;
   
   //asks for FLAVOR of the TYPE of smoothie
@@ -32,10 +32,13 @@ function smoothieFlavor(){
   } else if (myFlavor === 'VANILLA' || myFlavor === 'Vanilla' || myFlavor === 'vanilla'){
       return  
   } else {prompt('Ehhhhh...I\'m not sure what a ' + myFlavor + ' smoothie is. Could you let me ask you once more, please?');
+      smoothieFlavor();
+      return
   }
+  return howManySmoothies(myType, myFlavor);
 }
 
-function howManySmoothies(){
+function howManySmoothies(myType, myFlavor){
   //asks for HOW MANY of this TYPE and FLAVOR of smoothies you'd like 
   var howMany = prompt('So how many ' + myType + ' ' + myFlavor + ' smoothies would you like? [Please type ONLY NUMBERS, or else I won\'t understand you!');
   
@@ -46,15 +49,11 @@ function howManySmoothies(){
   var runAgain = prompt('Could I get you anything else? [Type YES or NO, or else I won\'t understand you!]');
   if(runAgain === 'YES' || runAgain === 'Yes' || runAgain === 'yes'){
     smoothieType();
-    smoothieFlavor();
-    howManySmoothies();
   } else{
     return
   }
 }
 
 smoothieType();
-smoothieFlavor();
-howManySmoothies();
 
 
